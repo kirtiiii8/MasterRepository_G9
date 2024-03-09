@@ -1,0 +1,46 @@
+def addition():
+    x=int(e1.get())
+    y=int(e2.get())
+    z=x+y
+    print(z)
+def multiplication():
+    x=int(e1.get())
+    y=int(e2.get())
+    a=x*y
+    print(a)
+def subtraction():
+    x=int(e1.get())
+    y=int(e2.get())
+    b=x-y
+    print(b)  
+def division():
+    x=int(e1.get())
+    y=int(e2.get())
+    c=x/y
+    print(c)
+def exponent():
+    x=int(e1.get())
+    y=int(e2.get())
+    c=x**y
+    print(c)    
+from tkinter import *
+root=Tk()
+l1=Label(root,text="enter no 1")
+l1.pack()
+e1=Entry(root)
+e1.pack()
+l2=Label(root,text="enter no 2")
+l2.pack()
+e2=Entry(root)
+e2.pack()
+b=Button(root,text="+",command=addition)
+b.pack()
+b=Button(root,text="*",command=multiplication)
+b.pack()
+b=Button(root,text="-",command=subtraction)
+b.pack()
+b=Button(root,text="/",command=division)
+b.pack()
+b=Button(root,text="**",command=exponent)
+b.pack()
+root.mainloop()
